@@ -9,7 +9,7 @@ $(function() {
     // Calculamos el ancho e la página
 
     var ancho = $(window).width(),
-        enlaces = $('#enlaces'),
+        enlaces = $('.enlaces'),
         btnMenu = $('#btn-menu'),
         icono = $('#btn-menu .icono-menu');
 

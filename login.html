@@ -34,29 +34,28 @@
 <body>
   
     <!-- Header -->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <section class="container">
-        <a class="navbar-brand" href="nosotros.html">
-          <img src="img/logovet.jpg" alt="Logo" width="50">
-        </a>
-          <section class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="beneficios.html">Beneficios</a></li>
-
-          </ul>
-        </section>
-        <section class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav">
-    
-            <li class="nav-item"><a class="nav-link text-success" href="registro.html">Register</a></li>
-            <li class="nav-item"><a class="nav-link text-success" href="login.html">Login</a></li>
-          </ul>
-        </section>
+   <header id="header">
+    <nav class="menu">
+       <div class="logo">
+          <a href="/img/logovet.jpg">
+            <img src="img/logovet.jpg" alt="" class="img-fluid img-logo" />
+          </a>
+          <a href="index.html" class="btn-menu" id="btn-menu">
+            <i class="fa-solid fa-bars icono-menu"></i>
+          </a>
+        </div>
+      <div class="enlaces" id="enlaces">
       
-      </section>
+        <a href="index.html">Principal</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+      
+      </div>
+      <div class="enlaces" id="enlaces">
+        <a href="registro.html">Register</a>
+        <a href="login.html">Login</a>
+      </div>
+      </div>
     </nav>
   </header>
   
@@ -78,5 +77,8 @@
   </section>
   </main>
   <script src="login.js"></script>
+
+   <script src="js/headroom.min.js"></script>
+    <script src="js/menu-flex.js"></script>
 </body>
 </html>

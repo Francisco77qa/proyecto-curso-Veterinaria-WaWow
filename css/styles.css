@@ -39,37 +39,152 @@
 }
 
 
-/* Hero */
-.hero {
-  position: relative;
-  text-align: center;
+/* INICIO DE MENÚ */
+header{
+    background-color: #ffff;
+    position: fixed ;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-modal);
+    box-shadow: 0 0 4px var(--color-sombras);
 }
-.hero img {
-  width: 100%;
-  border-radius: 15px;
-}
-.hero-text {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  color: var(--color-primario);
-  font-weight: bold;
-  font-family: 'Roboto';
-}
-.banner-info   {
-    text-align: center;
+.menu{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: 'Roboto';
-    font-size: 1.5em;
-    font-weight: 0.5em;
-    padding: 1em;
+    font-size: 1em;
 }
+
+.img-logo{
+    height: 4em;
+}
+
+.icono-menu{
+    /* visibility:hidden; */
+    display: none;
+}
+
+.enlaces a{
+    color:var(--color-primario);
+    text-decoration: none;
+    padding: .5em;
+    font-size: 1.0em;
+}
+
+.headroom{
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned{
+    transform: translateY(0%)
+}
+.headroom--unpinned{
+    transform:translateY(-100%)
+}
+
+@media  screen and (max-width:1023px) {
+    .menu{
+        flex-direction: column;
+
+    }
+    .icono-menu{
+        display: block;
+        color: var(--color-primario);
+        font-size: 2em;
+        margin-top: .5em;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* FIN DE MENÚ */
+
+
+/* INICIO DE BANNER  */
+
+.main-banner{
+    position: relative;
+    top:45px;
+    padding: 12em 12em;
+ 
+}
+
+@media screen and (max-width: 840px){
+    .main-banner{
+        padding: 1em 3em;
+    }
+    .banner-titulo{
+        font-size: .1em;
+    
+    }
+  
+}
+
+.centrado{
+    display: block;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+.main-banner::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    /* modo de fusion 
+    background-color: darkblue;
+    mix-blend-mode:color;
+    opacity: .6; */
+}
+
+.banner-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+    opacity: 0.5;
+}
+.banner-data{
+    position:relative;
+    text-align: center;
+    right: 30%;
+}
+
 .banner-titulo{
-    color: var(--color-primario);
+    color:var(--color-primario);
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.5em;
+
 }
-.banner-parrafo{
-    color: var(--color-parrafos);
-    font-weight: 0.1;
+.banner-info{
+    text-align: center;
 }
+
+.banner-boton:hover{
+    background-color: var(--color-primario);
+    color:#fff;
+    transition: background-color .4s ease-in-out ;
+}
+
+
+/* FIN DE BANNER */
+
 
 /* INICIO DE CARDS */
 
