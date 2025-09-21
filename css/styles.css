@@ -1,0 +1,124 @@
+/* SELECTOR PADRE (variables)*/ 
+:root{
+    --color-primario: #0aa;
+    --color-secundario: #082BA5;
+    --color-terciario: #007BDF;
+    --color-parrafos: #53575A;
+    --color-titulos: #282D31;
+    --color-sombras: #282D31;
+    --z-normal:1;
+    --z-tooltip:10;
+    --z-fixed:100;
+    --z-modal:1000;
+}
+
+/* SELECTOR UNIVERSAL  */
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.boton-whatsapp {
+   
+    position:fixed;
+    bottom:1em;
+    left: 1em;
+    font-size: 2.1em;
+    background-color: #4dc247;
+    padding: 0.01em 0.3em ;
+    border-radius:100%;
+    line-height: 1.5em;
+    color: #fff;
+    z-index: var(--z-fixed);
+
+}
+.boton-whatsapp:hover{
+    color:#fff;
+    background-color: #35ad32;
+}
+
+
+/* Hero */
+.hero {
+  position: relative;
+  text-align: center;
+}
+.hero img {
+  width: 100%;
+  border-radius: 15px;
+}
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: var(--color-primario);
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.banner-info   {
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1.5em;
+    font-weight: 0.5em;
+    padding: 1em;
+}
+.banner-titulo{
+    color: var(--color-primario);
+}
+.banner-parrafo{
+    color: var(--color-parrafos);
+    font-weight: 0.1;
+}
+
+/* INICIO DE CARDS */
+
+.cards-grid{
+    display: grid;
+    gap:2em;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+}
+.card{
+    background-color: #fff;
+    border-radius: .4em;
+    box-shadow: 0 0 4px var(--color-sombras);
+    border:1px solid var(--color-parrafos)
+}
+.card-img img{
+    width: 100%;
+    border-radius: .4em .4em 0 0;
+}
+
+.card-content{
+    padding:1em;
+    display: flex;
+    flex-direction: column;
+}
+.card-tittle{
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-align:center;
+    font-size: 1.2em;
+}
+.card-boton{
+    font-family: 'Roboto';
+    font-weight: 600;
+    text-decoration: none;
+    text-align:center;
+    color: var(--color-primario);
+    border-radius:.5em;
+    border:1px solid var(--color-primario);
+    padding: 0.4em .6em;
+}
+.card-boton:hover{
+    background-color: var(--color-primario);
+    color:#fff;
+    transition: background-color .4s ease-in-out ;
+}
+/* FIN DE CARDS */
+
+/* Contacto */
+.contacto {
+  background-color: #1abc9c;
+  border-radius: 5px;
+}

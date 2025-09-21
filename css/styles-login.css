@@ -1,0 +1,86 @@
+/* SELECTOR PADRE (variables)*/ 
+:root{
+    --color-primario: #0aa;
+    --color-secundario: #082BA5;
+    --color-terciario: #007BDF;
+    --color-parrafos: #53575A;
+    --color-titulos: #282D31;
+    --color-sombras: #282D31;
+    --z-normal:1;
+    --z-tooltip:10;
+    --z-fixed:100;
+    --z-modal:1000;
+}
+
+/* SELECTOR UNIVERSAL  */
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.main-login{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaa;
+  width: 300px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  color: var(--color-primario);
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.input-box label {
+  position: absolute;
+  top: -20px;
+  left: 10px;
+  font-size: 14px;
+  color: var(--color-primario);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: var(--color-primario);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004d40;
+}
+
+#mensaje {
+  margin-top: 10px;
+  color: red;
+}
