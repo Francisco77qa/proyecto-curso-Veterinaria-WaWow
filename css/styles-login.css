@@ -20,7 +20,6 @@
 }
 
 
-
 /* INICIO DE MENÚ */
 header{
     background-color: #ffff;
@@ -91,7 +90,6 @@ header{
 }
 /* FIN DE MENÚ */
 
-
 .main-login{
   margin: 0;
   padding: 0;
@@ -101,6 +99,7 @@ header{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  
 }
 
 .login-box {
@@ -108,7 +107,7 @@ header{
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px #aaa;
-  width: 300px;
+  width: 350px;
   text-align: center;
 }
 
@@ -155,4 +154,9 @@ button:hover {
 #mensaje {
   margin-top: 10px;
   color: red;
+}
+
+.contacto {
+  background-color: #1abc9c;
+  border-radius: 5px;
 }
