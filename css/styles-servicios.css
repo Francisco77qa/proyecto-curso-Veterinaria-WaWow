@@ -1,0 +1,234 @@
+/* SELECTOR PADRE (variables)*/ 
+:root{
+    --color-primario: #0aa;
+    --color-secundario: #082BA5;
+    --color-terciario: #007BDF;
+    --color-parrafos: #53575A;
+    --color-titulos: #282D31;
+    --z-normal:1;
+    --z-tooltip:10;
+    --z-fixed:100;
+    --z-modal:1000;
+}
+
+/* SELECTOR UNIVERSAL  */
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* INICIO DE MENÚ */
+header{
+    background-color: #ffff;
+    position: fixed ;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-modal);
+    box-shadow: 0 0 4px var(--color-sombras);
+}
+.menu{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto';
+    font-size: 1em;
+}
+
+.img-logo{
+    height: 4em;
+}
+
+.icono-menu{
+    /* visibility:hidden; */
+    display: none;
+}
+
+.enlaces a{
+    color:var(--color-primario);
+    text-decoration: none;
+    padding: .5em;
+    font-size: 1.0em;
+}
+
+.headroom{
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned{
+    transform: translateY(0%)
+}
+.headroom--unpinned{
+    transform:translateY(-100%)
+}
+
+@media  screen and (max-width:1023px) {
+    .menu{
+        flex-direction: column;
+
+    }
+    .icono-menu{
+        display: block;
+        color: var(--color-primario);
+        font-size: 2em;
+        margin-top: .5em;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* FIN DE MENÚ */
+
+
+
+/* INICIO DE CARDS */
+
+.titulogeneral{
+    color: var(--color-primario);
+    font-size: medium;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+.cards-grid{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 70px;
+    padding: .10px;
+}
+.card{
+    background-color: #fff;
+    border-radius: .4em;
+    box-shadow: 0 0 4px var(--color-primario);
+    border: 1px solid var(--color-primario);
+    
+}
+.card-img img{
+    width: 100%;
+    border-radius: .4em .4em 0 0;
+    
+}
+.card-content{
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+.card-title{
+    font-family: 'montserrat';
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--color-primario);
+}
+.card-boton{
+    font-family: 'roboto';
+    font-weight: 600;
+    text-decoration: none;
+    /* text-align: center; */
+    color: var(--color-sombras);
+    border-radius: .2em;
+    border: 1px solid var(--color-primario);
+    padding: .4em .6em;
+    text-decoration: none;
+    display: flex;            
+    justify-content: center;
+    align-items: center;       
+}
+
+.card-boton:hover{
+    background-color: var(--color-primario);
+    color: #fff;
+    transition: background-color .4s ease-in-out;
+}
+/* FIN DE CARDS */
+
+
+/* LOGIN */
+
+.main-registro {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registro-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaa;
+  width: 350px;
+  text-align: center;
+}
+
+.registro-box h2 {
+  margin-bottom: 20px;
+  color: var(--color-primario);
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+}
+
+.input-box label {
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  font-size: 14px;
+  color: var(--color-primario);
+  padding: 0 5px;
+}
+
+input.form-control {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: var(--color-primario);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--color-primario);
+}
+
+#mensaje {
+  margin-top: 10px;
+  color: green;
+}
+
+
+.contacto {
+  background-color: #1abc9c;
+  border-radius: 5px;
+}
